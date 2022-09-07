@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    background: #F7F9F9;
+}
+
+
+/* **************************
+    Header menu section
+************************** */
+
+.menu {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #48DBFB;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background: #fff;
+    color: #48DBFB;
+}
+
+.menu ul li::before {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu ul li:hover::before {
+    width: 100%;
+}
+
+
+/* ************************
+    Banner Section
+************************* */
+
+.banner-section {
+    width: 100%;
+    background: #48DBFB;
+    text-align: center;
+    margin-top: 5px;
+    padding: 70px 0;
+}
+
+.banner-section p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.banner-section h1 {
+    color: #fff;
+    margin: 15px 0;
+    font-size: 42px;
+    color: #F4F4F4;
+    font-weight: 900;
+}
+
+.banner-section a {
+    display: inline-block;
+    padding: 14px 18px;
+    background: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    color: #DDDEDE;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-section a:hover {
+    color: #FFF;
+}
+
+.banner-section .fa-android {
+    margin-right: 3px;
+}
+
+.banner-section a::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.banner-section a:hover::before {
+    width: 100%;
+}
+
+
+/* *********************
+    Gallery Section
+*********************** */
+
+.gallery-section {
+    width: 100%;
+}
+
+.gallery-section h4 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 12px;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.gallery-section p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.gallery-items {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+}
+
+.items {
+    width: 25%;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.items img {
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.one img:hover {
+    transform: rotate(360deg);
+    transition: 0.4s;
+}
+
+.tow img:hover {
+    transform: rotate(35deg) scale(1.3);
+    transition: 0.4s;
+}
+
+.three img:hover {
+    transform: rotate(-35deg) scale(1.1);
+    transition: 0.4s;
+}
+
+.four img:hover {
+    transform: rotate(50deg) scale(1.5);
+    transition: all 0.4s ease-in-out;
+}
+
+.five img:hover {
+    transform: rotate(25deg) scale(1.1);
+    transition: all 0.4s;
+}
+
+.seven img:hover {
+    transform: scale(1.2);
+    transition: all 0.4s;
+}
+
+.eight img:hover {
+    transform: scale(1.5);
+    transition: all 0.4s;
+}
+
+
+/* ******************************
+        Our app Section
+****************************** */
+
+.app-section {
+    width: 100%;
+    text-align: center;
+}
+
+.app-content {
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.app-content .app-heading {
+    text-align: center;
+    font-size: 27px;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+.app-content p {
+    font-size: 15px;
+}
+
+.all-step {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -2px;
+}
+
+.all-step .step1 {
+    background: black;
+    width: 75px;
+    height: 40px;
+    color: #fff;
+    line-height: 38px;
+    transform: rotate(-43deg);
+    margin-bottom: 17px;
+    transition: all 0.4s ease-in-out;
+}
+
+.all-step .step1:hover {
+    transform: rotate(0deg) scale(1.4);
+    transition: 0.3s;
+}
+
+.all-step .step2 {
+    background: black;
+    width: 75px;
+    height: 40px;
+    color: #fff;
+    line-height: 38px;
+    margin-bottom: 17px;
+    transition: all 0.4s ease-in;
+}
+
+.all-step .step2:hover {
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+
+.all-step .step3 {
+    background: black;
+    width: 75px;
+    height: 40px;
+    color: #fff;
+    line-height: 38px;
+    transform: rotate(43deg);
+    margin-bottom: 22px;
+    transition: all 0.4s ease-in-out;
+}
+
+.all-step .step3:hover {
+    transform: rotate(0deg) scale(1.4);
+    transition: 0.3s;
+}
+
+.all-step .step-design:hover {
+    background: #48DBFB;
+    color: black;
+}
+
+
+/* ****************************
+        Fotter Section
+**************************** */
+
+.fotter-section {
+    width: 100%;
+    background: #2E2F31;
+    text-align: center;
+    padding: 20px;
+    color: grey;
+}
+
+.fotter-section p {
+    font-size: 15px;
+    font-weight: bold;
+}
