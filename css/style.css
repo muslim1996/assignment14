@@ -35,6 +35,8 @@ body {
     padding: 10px 20px;
     background: #48DBFB;
     text-decoration: none;
+    color: black;
+    font-size: 15px;
 }
 
 .menu ul li a:hover {
